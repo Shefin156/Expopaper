@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Business Networking Page</title>
+    <link rel="stylesheet" href="css/networking-styles.css">
+</head>
+<body>
+
+    <!-- Header Section -->
+    <header class="networking-header">
+        <nav class="navbar">
+            <div class="logo">
+                <img src="images/Expopaper logo.png" alt="Company Logo">
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="event-calendar.html">Events</a></li>
+                    <li><a href="networking.html">Networking</a></li>
+                </ul>
+            </nav>
+        </nav>
+        <div class="header-intro">
+            <h1>Welcome to the Business Networking Platform</h1>
+            <p>Connect with investors, partners, and peers at the upcoming event. Fill in your preferences and let us match you with the best opportunities!</p>
+        </div>
+    </header>
+
+    <!-- Registration Form Section -->
+    <section class="registration-section">
+        <h2>Register for your Event</h2>
+        <form class="registration-form">
+            <input type="text" id="full-name" placeholder="Full Name" required>
+            <input type="email" id="email" placeholder="Email Address" required>
+            <input type="text" id="company" placeholder="Company Name" required>
+            <select id="event" required>
+                <option value="" disabled selected>Select Event</option>
+                <option value="event1">Event 1</option>
+                <option value="event2">Event 2</option>
+            </select>
+            <button type="submit">Register</button>
+        </form>
+    </section>
+
+    <!-- Profile Setup (Preferences & Goals) -->
+    <section class="profile-setup">
+        <h2>Set Your Preferences and Goals</h2>
+        <form class="profile-form">
+            <label for="industry">Industry</label>
+            <select id="industry">
+                <option value="tech">Technology</option>
+                <option value="finance">Finance</option>
+                <option value="marketing">Marketing</option>
+                <option value="manufacturing">Manufacturing</option>
+            </select>
+
+            <label for="goal">Primary Goal</label>
+            <select id="goal">
+                <option value="investment">Find Investors</option>
+                <option value="partnership">Seek Partnerships</option>
+                <option value="networking">General Networking</option>
+            </select>
+
+            <label for="preferred-partners">Preferred Partners</label>
+            <input type="text" id="preferred-partners" placeholder="Describe your ideal partner" required>
+
+            <button type="submit">Save Preferences</button>
+        </form>
+    </section>
+
+    <!-- Matching Results / Connections -->
+    <section class="matching-results">
+        <h2>Your Potential Matches</h2>
+        <div class="matches">
+            <!-- Sample Match Cards -->
+            <div class="match-card">
+                <img src="images/profile.png" alt="Business Person">
+                <h3>John Doe</h3>
+                <p>Looking for investors in the tech industry.</p>
+                <button class="connect-btn">Connect</button>
+            </div>
+            <div class="match-card">
+                <img src="images/profile.png" alt="Business Person">
+                <h3>Jane Smith</h3>
+                <p>Interested in finding strategic business partners.</p>
+                <button class="connect-btn">Connect</button>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Business Networking. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>

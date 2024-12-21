@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Events Calendar - ExpoPaper</title>
+    <link rel="stylesheet" href="css/event-calendar-styles.css">
+</head>
+<body>
+
+    <!-- Sticky Header Section -->
+    <header class="sticky-nav">
+        <div class="logo">
+            <img src="images/Expopaper logo.png" alt="ExpoPaper Logo" />
+        </div>
+        <nav>
+            <ul>
+                <li><a href="event-calendar.html">Event Calendar</a></li>
+                <li><a href="networking.html">Networking</a></li>
+                <li><a href="business-news.html">Business News</a></li>
+                <li><a href="blogs.html">Blogs and Articles</a></li>
+                <li><a href="About-us.html">About Us</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Events Calendar Section -->
+    <section id="events-calendar" class="events-calendar">
+        <h1>Upcoming Events</h1>
+        
+        <!-- Search Filters -->
+        <div class="search-filters">
+            <div class="filter">
+                <label for="category">Category</label>
+                <select id="category" name="category">
+                    <option value="all">All Categories</option>
+                    <option value="tech">Technology</option>
+                    <option value="business">Business</option>
+                    <option value="health">Health</option>
+                    <option value="education">Education</option>
+                </select>
+            </div>
+            <div class="filter">
+                <label for="location">Location</label>
+                <input type="text" id="location" name="location" placeholder="Enter city or country">
+            </div>
+            <div class="filter">
+                <label for="date">Date</label>
+                <input type="date" id="date" name="date">
+            </div>
+            <button class="filter-btn" onclick="applyFilters()">Apply Filters</button>
+        </div>
+
+        <!-- Event List -->
+        <div class="event-list">
+            <div class="event-item">
+                <div class="event-thumbnail">
+                    <img src="images/pexels-thanh-van-dinh-712218856-28459388.jpg" alt="Event 1 Thumbnail">
+                </div>
+                <div class="event-details">
+                    <div class="event-date">January 12, 2024</div>
+                    <h2>Global Business Summit</h2>
+                    <p>Join global leaders for an immersive experience in business innovation. Network with top executives and explore new trends in the business world.</p>
+                    <button class="event-btn">Learn More</button>
+                </div>
+            </div>
+
+            <div class="event-item">
+                <div class="event-thumbnail">
+                    <img src="images/pexels-jibarofoto-2774556.jpg" alt="Event 2 Thumbnail">
+                </div>
+                <div class="event-details">
+                    <div class="event-date">February 7, 2024</div>
+                    <h2>Tech Innovators Conference</h2>
+                    <p>Discover the latest breakthroughs in technology at the Tech Innovators Conference. A gathering of visionaries from around the world.</p>
+                    <button class="event-btn">Learn More</button>
+                </div>
+            </div>
+
+            <div class="event-item">
+                <div class="event-thumbnail">
+                    <img src="images/pexels-cherubs-22669860.jpg" alt="Event 3 Thumbnail">
+                </div>
+                <div class="event-details">
+                    <div class="event-date">March 18, 2024</div>
+                    <h2>Healthcare Leadership Forum</h2>
+                    <p>Learn about the future of healthcare and explore cutting-edge advancements at the Healthcare Leadership Forum. Connect with experts in the field.</p>
+                    <button class="event-btn">Learn More</button>
+                </div>
+            </div>
+
+            <div class="event-item">
+                <div class="event-thumbnail">
+                    <img src="images/pexels-kindelmedia-7979605.jpg" alt="Event 4 Thumbnail">
+                </div>
+                <div class="event-details">
+                    <div class="event-date">April 25, 2024</div>
+                    <h2>International Education Expo</h2>
+                    <p>The Education Expo brings together institutions and educators from around the world. A great opportunity for students, professionals, and educators alike.</p>
+                    <button class="event-btn">Learn More</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script src="js/event-calendar-script.js"></script>
+</body>
+</html>

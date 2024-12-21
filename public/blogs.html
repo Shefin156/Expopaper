@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blogs & Articles - ExpoPaper</title>
+    <link rel="stylesheet" href="css/blogs-styles.css">
+</head>
+<body>
+
+    <!-- Sticky Header Section (Same as Homepage) -->
+    <header class="sticky-nav">
+        <div class="logo">
+            <img src="images/Expopaper logo.png" alt="ExpoPaper Logo" />
+        </div>
+        <nav>
+            <ul>
+                <li><a href="event-calendar.html">Event Calendar</a></li>
+                <li><a href="networking.html">Networking</a></li>
+                <li><a href="business-news.html">Business News</a></li>
+                <li><a href="blogs.html">Blogs and Articles</a></li>
+                <li><a href="About-us.html">About Us</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Blogs and Articles Section -->
+    <section id="blogs" class="blogs-section">
+        <div class="container">
+
+            <!-- Featured Blog Section -->
+            <div class="featured-blog">
+                <div class="featured-content">
+                    <img src="images/pexels-startup-stock-photos-7115.jpg" alt="Featured Blog">
+                    <div class="text-overlay">
+                        <h2>Discover the Future of Business in the Digital Age</h2>
+                        <p>Uncover how technology is reshaping the business landscape. From AI to blockchain, we explore what's driving the changes.</p>
+                        
+                    </div>
+                </div>
+            </div>
+
+            <!-- Blog Listings Section -->
+            <div class="blog-listings">
+                <h2>Latest Articles</h2>
+                <div class="articles">
+
+                    <!-- Blog Post 1 -->
+                    <div class="article">
+                        <img src="images/pexels-cherubs-22669860.jpg" alt="Blog 1">
+                        <h3>How Artificial Intelligence is Transforming Healthcare</h3>
+                        <p>The healthcare sector is being revolutionized by AI. Here’s how the future of medical treatment will look...</p>
+                        <a href="#" class="read-more-btn">Read More</a>
+                    </div>
+
+                    <!-- Blog Post 2 -->
+                    <div class="article">
+                        <img src="images/pexels-thanh-van-dinh-712218856-28459388.jpg" alt="Blog 2">
+                        <h3>Blockchain in Business: A Game Changer</h3>
+                        <p>Blockchain technology is being integrated into more businesses, ensuring transparency and efficiency...</p>
+                        <a href="#" class="read-more-btn">Read More</a>
+                    </div>
+
+                    <!-- Blog Post 3 -->
+                    <div class="article">
+                        <img src="images/pexels-startup-stock-photos-7115.jpg" alt="Blog 3">
+                        <h3>The Rise of E-commerce in the Post-Pandemic Era</h3>
+                        <p>The COVID-19 pandemic accelerated e-commerce growth. Let’s dive into how businesses adapted to these changes...</p>
+                        <a href="#" class="read-more-btn">Read More</a>
+                    </div>
+
+                    <!-- Blog Post 4 -->
+                    <div class="article">
+                        <img src="images/pexels-olly-3769146.jpg" alt="Blog 4">
+                        <h3>Sustainability in Business: Strategies for the Future</h3>
+                        <p>Explore sustainable business practices and how companies can thrive while being environmentally responsible...</p>
+                        <a href="#" class="read-more-btn">Read More</a>
+                    </div>
+
+                    <!-- Blog Post 5 -->
+                    <div class="article">
+                        <img src="images/pexels-mariusz-zajac-82665505-22804132.jpg" alt="Blog 5">
+                        <h3>The Power of Remote Work: How it’s Reshaping the Workforce</h3>
+                        <p>Remote work is here to stay. Learn about the benefits, challenges, and the future of working from home...</p>
+                        <a href="#" class="read-more-btn">Read More</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Sidebar with Categories, Tags, and Search Bar -->
+            <div class="sidebar">
+                <div class="search-bar">
+                    <input type="text" placeholder="Search Articles..." />
+                    <button class="search-btn">Search</button>
+                </div>
+
+                <div class="categories">
+                    <h3>Categories</h3>
+                    <ul>
+                        <li><a href="#">Technology</a></li>
+                        <li><a href="#">Business</a></li>
+                        <li><a href="#">Healthcare</a></li>
+                        <li><a href="#">Sustainability</a></li>
+                        <li><a href="#">E-commerce</a></li>
+                    </ul>
+                </div>
+
+                <div class="tags">
+                    <h3>Tags</h3>
+                    <ul>
+                        <li><a href="#">AI</a></li>
+                        <li><a href="#">Blockchain</a></li>
+                        <li><a href="#">Remote Work</a></li>
+                        <li><a href="#">Startups</a></li>
+                        <li><a href="#">Innovation</a></li>
+                    </ul>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Contact Form Section -->
+    <section id="contact" class="contact-form-section">
+        <div class="contact-form-container">
+            <h2>Contact Us</h2>
+            <form action="submit_form.php" method="post">
+                <input type="text" name="name" placeholder="Your Name" required>
+                <input type="email" name="email" placeholder="Your Email" required>
+                <textarea name="message" placeholder="Your Message" required></textarea>
+                <button type="submit" class="submit-btn">Send Message</button>
+            </form>
+        </div>
+    </section>
+
+    <script src="js/blogs-script.js"></script>
+</body>
+</html>

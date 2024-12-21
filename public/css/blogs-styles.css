@@ -1,0 +1,251 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body Styling */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+/* Sticky Navigation (Same as other pages) */
+.sticky-nav {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: #fbff82; /* Yellow */
+    color: white;
+    padding: 15px 30px;
+    z-index: 1000;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.sticky-nav .logo img {
+    height: 40px;
+    vertical-align: middle;
+}
+
+.sticky-nav nav {
+    display: inline-block;
+    padding-top: 10px;
+}
+
+.sticky-nav nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.sticky-nav nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+.sticky-nav nav ul li a {
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    font-size: 16px;
+    transition: color 0.3s ease;
+}
+
+.sticky-nav nav ul li a:hover {
+    color: #fbff82; /* Yellow hover effect */
+}
+
+/* Blogs Section */
+.blogs-section {
+    margin-top: 100px;
+    padding: 40px 20px;
+    background-color: white;
+}
+
+/* Featured Blog */
+/* Featured Blog */
+.featured-blog {
+    margin-bottom: 40px;
+}
+
+.featured-blog .featured-content {
+    position: relative;
+}
+
+.featured-blog img {
+    width: 80%; /* Adjusted size to make it smaller */
+    height: auto;
+    border-radius: 8px;
+    margin: 0 auto;
+}
+
+.text-overlay {
+    position: absolute;
+    top: 0; /* Position the text at the top */
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start; /* Align text to the top */
+    border-radius: 8px;
+}
+
+.text-overlay h2 {
+    font-size: 28px;
+    margin-bottom: 15px;
+}
+
+.text-overlay p {
+    font-size: 16px;
+}
+
+
+
+/* Blog Listings */
+.blog-listings {
+    margin-top: 40px;
+}
+
+.blog-listings h2 {
+    font-size: 32px;
+    color: #8718ff; /* Purple */
+    margin-bottom: 20px;
+}
+
+.articles {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.article {
+    width: 30%;
+    background-color: #f8f8f8;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+}
+
+.article img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+.article h3 {
+    padding: 15px;
+    font-size: 18px;
+}
+
+.article p {
+    padding: 0 15px 15px;
+    font-size: 14px;
+    color: #666;
+}
+
+.article .read-more-btn {
+    padding: 6px 12px; /* Adjusted size for consistency */
+    background-color: #8718ff; /* Purple */
+    color: white;
+    border: none;
+    border-radius: 4px;
+    font-size: 12px; /* Smaller font size */
+    margin-bottom: 20px;
+}
+
+/* Sidebar */
+.sidebar {
+    width: 25%;
+    margin-left: 20px;
+}
+
+.sidebar .search-bar input {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 20px;
+    border-radius: 4px;
+    border: 1px solid #ddd;
+}
+
+.sidebar .search-bar button {
+    background-color: #8718ff; /* Purple */
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+/* Categories in Sidebar - Improved */
+.sidebar .categories ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.sidebar .categories ul li {
+    margin-bottom: 15px;
+}
+
+.sidebar .categories ul li a {
+    font-size: 16px;
+    color: #8718ff; /* Purple */
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.sidebar .categories ul li a:hover {
+    color: #fbff82; /* Yellow hover effect */
+}
+
+/* Contact Form Section (Background Color Changed to Purple) */
+.contact-form-section {
+    padding: 50px 20px;
+    background-color: #8718ff; /* Purple */
+}
+
+.contact-form-container {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 30px;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.contact-form-container h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: #8718ff; /* Purple */
+}
+
+.contact-form-container input, 
+.contact-form-container textarea {
+    width: 100%;
+    padding: 15px;
+    margin-bottom: 20px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 16px;
+}
+
+.contact-form-container .submit-btn {
+    background-color: #fbff82; /* Yellow */
+    color: #333;
+    padding: 12px 24px;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.contact-form-container .submit-btn:hover {
+    background-color: #8718ff; /* Purple on hover */
+    color: white;
+}
