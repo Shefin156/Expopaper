@@ -13,7 +13,7 @@ body {
 .sticky-nav {
     position: sticky;
     top: 0;
-    background-color: #ffb133; /* Yellow */
+    background-color: #bdff87; /* Yellow */
     color: #1e003d; /* Deep Purple */
     display: flex;
     justify-content: space-between;
@@ -102,36 +102,74 @@ body {
 }
 
 /* Features Section */
+/* Features Section */
 .features {
-    background-color: #f0f0f0;
+    background-color: #f0f0f0; /* Light background */
     padding: 60px 0;
     text-align: center;
 }
 
 .feature-cards {
     display: flex;
-    justify-content: center;
-    gap: 30px;
+    justify-content: space-around; /* Spread cards horizontally */
+    gap: 20px; /* Add space between cards */
 }
 
 .card {
-    background-color: #fff;
+    position: relative;
+    width: 300px;
+    height: 200px;
     padding: 20px;
-    width: 250px;
-    border-radius: 10px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 15px;
+    color: #fff;
+    text-align: center;
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2); /* Floating shadow */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
+/* Add different colors to each card */
+.event-calendar {
+    background-color: #1e90ff; /* Blue */
+}
+
+.networking {
+    background-color: #ff6347; /* Tomato */
+}
+
+.business-news {
+    background-color: #32cd32; /* Lime Green */
+}
+
+/* Floating hover effect */
+.card:hover {
+    transform: translateY(-10px); /* Slight lift on hover */
+    box-shadow: 0 12px 20px rgba(0, 0, 0, 0.3); /* Deeper shadow */
+}
+
+/* Card heading and text styles */
 .card h3 {
-    font-size: 1.2rem;
-    color: #1e003d;
+    margin-bottom: 15px;
+    font-size: 1.5rem;
 }
 
 .card p {
-    color: #333;
     font-size: 1rem;
     line-height: 1.5;
 }
+
+/* Responsive design */
+@media (max-width: 768px) {
+    .feature-cards {
+        flex-direction: column; /* Stack cards vertically on smaller screens */
+        gap: 30px;
+    }
+
+    .card {
+        width: 90%; /* Adjust card width */
+        margin: 0 auto; /* Center cards */
+    }
+}
+
 
 /* Expanded Content Section */
 .expanded-content {
