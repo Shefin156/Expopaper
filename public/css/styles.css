@@ -17,9 +17,26 @@ body {
     color: #1e003d; /* Deep Purple */
     display: flex;
     justify-content: space-between;
+    align-items: center; /* Ensure items are vertically aligned */
     padding: 15px 20px;
     z-index: 1000;
+    flex-wrap: wrap; /* Allows items to wrap on smaller screens */
 }
+
+/* Mobile-Specific Styles */
+@media (max-width: 768px) {
+    .sticky-nav {
+        flex-direction: column; /* Stack items vertically */
+        text-align: center;
+        padding: 10px; /* Adjust padding for smaller screens */
+    }
+
+    .sticky-nav a {
+        display: block; /* Ensure links stack */
+        margin: 5px 0; /* Add spacing between links */
+    }
+}
+
 
 .sticky-nav .logo img {
     max-height: 60px; /* Adjust the height of the logo */
